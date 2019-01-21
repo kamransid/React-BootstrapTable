@@ -49,6 +49,7 @@ class BigTable extends React.Component{
                data = {products}
                striped
                hover
+               condensed
             >
             <TableHeaderColumn
                isKey

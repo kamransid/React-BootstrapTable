@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import App from './App';
-import App from './FirstTable';
+// import App from './FirstTable';
+import App from './BasicTable';
 import * as serviceWorker from './serviceWorker';
 import '../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
+
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
