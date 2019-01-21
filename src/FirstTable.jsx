@@ -45,6 +45,7 @@ class BigTable extends React.Component{
     render(){
         return(
             <BootstrapTable
+               version = '4'
                data = {products}
                striped
                hover
