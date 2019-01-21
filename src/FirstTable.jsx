@@ -4,37 +4,88 @@ var ReactBsTable = require('react-bootstrap-table')
 var BootstrapTable = ReactBsTable.BootstrapTable
 var TableHeaderColumn = ReactBsTable.TableHeaderColumn
 
-var products = [
+var userInfo = [
     {
-        id: 1,
-        name: 'Product1',
-        price: 120
+        userName: 1,
+        email: 'Product1',
+        role: 120,
+        firstName: 'Mohammad',
+        middleName: 'kamran',
+        lastName: 'siddique',
+        timeZone: 'UTC'
     },
     {
-        id: 2,
-        name: 'Product2',
-        price: 80
+        userName: 1,
+        email: 'Product1',
+        role: 120,
+        firstName: 'Mohammad',
+        middleName: 'kamran',
+        lastName: 'siddique',
+        timeZone: 'UTC'
     },
     {
-        id: 3,
-        name: 'Product3',
-        price: 50
+        userName: 1,
+        email: 'Product1',
+        role: 120,
+        firstName: 'Mohammad',
+        middleName: 'kamran',
+        lastName: 'siddique',
+        timeZone: 'UTC'
     },
     {
-        id: 4,
-        name: 'Product4',
-        price: 840
+        userName: 1,
+        email: 'Product1',
+        role: 120,
+        firstName: 'Mohammad',
+        middleName: 'kamran',
+        lastName: 'siddique',
+        timeZone: 'UTC'
     },
     {
-        id: 5,
-        name: 'Product5',
-        price: 800
+        userName: 1,
+        email: 'Product1',
+        role: 120,
+        firstName: 'Mohammad',
+        middleName: 'kamran',
+        lastName: 'siddique',
+        timeZone: 'UTC'
     },
     {
-        id: 6,
-        name: 'Product6',
-        price: 860
-    }
+        userName: 1,
+        email: 'Product1',
+        role: 120,
+        firstName: 'Mohammad',
+        middleName: 'kamran',
+        lastName: 'siddique',
+        timeZone: 'UTC'
+    },
+    {
+        userName: 1,
+        email: 'Product1',
+        role: 120,
+        firstName: 'Mohammad',
+        middleName: 'kamran',
+        lastName: 'siddique',
+        timeZone: 'UTC'
+    },
+    {
+        userName: 1,
+        email: 'Product1',
+        role: 12,
+        firstName: 'Mohammad',
+        middleName: 'kamran',
+        lastName: 'siddique',
+        timeZone: 'UTC'
+    },
+    {
+        userName: 1,
+        email: 'Product1',
+        role: 120,
+        firstName: 'Mohammad',
+        middleName: 'kamran',
+        lastName: 'siddique',
+        timeZone: 'UTC'
+    },
 
 ]
 
@@ -45,23 +96,40 @@ class BigTable extends React.Component{
     render(){
         return(
             <BootstrapTable
-               version = '4'
-               data = {products}
+               data = {userInfo}
                striped
                hover
                condensed
+               pagination
             >
             <TableHeaderColumn
                isKey
-               dataField = 'id'
-            >Product ID</TableHeaderColumn>
+               dataField = 'userName'
+               dataSort = {true}
+            >User Name</TableHeaderColumn>
             <TableHeaderColumn
-               dataField = 'name'
-            >Product Name
+               dataField = 'email'
+               dataSort = {true}
+            >Email
             </TableHeaderColumn>
             <TableHeaderColumn
-               dataField = 'price'
-            >Product Price</TableHeaderColumn>
+               dataField = 'role'
+               dataSort = {true}
+            >Role</TableHeaderColumn>
+            <TableHeaderColumn
+               dataField = 'firstName'
+               dataSort = {true}
+            >First Name</TableHeaderColumn>
+            <TableHeaderColumn
+               dataField = 'lastName'
+               dataSort = {true}
+            >Middle Name</TableHeaderColumn>
+            <TableHeaderColumn
+               dataField = 'middleName'
+            >Last Name</TableHeaderColumn>
+            <TableHeaderColumn
+               dataField = 'timeZone'
+            >Time Zone</TableHeaderColumn>
             </BootstrapTable>
         )
     }
